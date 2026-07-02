@@ -38,7 +38,7 @@ jobs:
       - name: Deploy to EKS
         run: |
           # 1. Update the kubeconfig so GitHub can talk to EKS
-          aws eks update-kubeconfig --region eu-north-1 --name YOUR_CLUSTER_NAME
+          aws eks update-kubeconfig --region eu-north-1 --name production-cluster
           
           # 2. Use 'sed' to automatically swap "YOUR_IMAGE_TAG" with the live GitHub commit ID
           sed -i "s|YOUR_IMAGE_TAG|${{ github.sha }}|g" deployment.yaml
