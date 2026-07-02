@@ -14,7 +14,7 @@ public class HelloController {
     @GetMapping("/api/hello")
     public Map<String, String> sayHello() {
         Map<String, String> response = new HashMap<>();
-        response.put("message", "Hello from the Java Spring Boot Backend!");
+        response.put("message", "Hello this is testing !");
         response.put("status", "Success");
         return response; // Automatically converts to JSON format
     }

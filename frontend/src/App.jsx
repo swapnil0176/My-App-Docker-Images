@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // Fetch data from the Java Backend endpoint
-    fetch('/api/hello') 
+     fetch('/api/hello') 
       // fetch('http://localhost:8080/api/hello')
       .then((response) => response.json())
       .then((jsonData) => {
