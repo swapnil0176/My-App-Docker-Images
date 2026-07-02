@@ -16,8 +16,7 @@ spec:
       containers:
       - name: java-react-container
         # Replace this with your exact image URI from ECR:
-        # image: 148221445490.dkr.ecr.eu-north-1.amazonaws.com/app/my-app:YOUR_IMAGE_TAG
-        image: 148221445490.dkr.ecr.eu-north-1.amazonaws.com/my-app-YOUR_IMAGE_TAG
+        image: 148221445490.dkr.ecr.eu-north-1.amazonaws.com/app/my-app:YOUR_IMAGE_TAG
         ports:
         - containerPort: 8080
 ---
