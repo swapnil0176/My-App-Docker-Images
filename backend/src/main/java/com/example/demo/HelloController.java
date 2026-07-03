@@ -14,8 +14,8 @@ public class HelloController {
     @GetMapping("/api/hello")
     public Map<String, String> sayHello() {
         Map<String, String> response = new HashMap<>();
-        response.put("message", "Hello this is testing !");
+        response.put("message", "You successfully created EKS and running the application!");
         response.put("status", "Success");
-        return response; // Automatically converts to JSON format
+        return response; 
     }
 }
