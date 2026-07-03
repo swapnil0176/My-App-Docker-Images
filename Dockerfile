@@ -46,4 +46,4 @@ COPY --from=backend-builder /backend/target/*.jar app.jar
 EXPOSE 8080
 
 # Launch the full-stack application
-ENTRYPOINT ["java", "-cp", "app.jar", "org.springframework.boot.loader.launch.JarLauncher"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
